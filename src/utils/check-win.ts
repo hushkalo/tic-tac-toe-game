@@ -1,5 +1,4 @@
 export function checkWin(winLines: number[][], field: string[]): string | null {
-  console.log(winLines);
   for (let i = 0; i < winLines.length; i++) {
     const line = winLines[i];
     const firstSymbol = field[line[0]];
@@ -13,5 +12,5 @@ export function checkWin(winLines: number[][], field: string[]): string | null {
     }
   }
 
-  return null; // Победителя нет
+  return null;
 }
